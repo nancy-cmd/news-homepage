@@ -1,13 +1,16 @@
 body{
     max-width: 1440px;
     background-color: var(--Off-white);
+    font-family: 'Inter', sans-serif;
 }
 main, nav{
    margin: auto 150px;
 }
+
 p {
     font-size: 15px;
     color: var(--Dark-grayish-blue);
+    line-height: 30px;
 }
 /*colors*/
 :root {
@@ -39,11 +42,49 @@ li {
     left: 400px;
     
 }
+/*grid container*/
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.item1 {
+    grid-area: area1;
+}
+.item2 {
+    grid-area: area2;
+}
+.item3 {
+    grid-area: area3;
+    
+}
+.grid-container1 {
+    display: grid;
+    grid-template-areas: "area1 area2";
+}
 
 /* sec1*/
 .sec1-img {
     height: 300px;
     width: 700px;
+}
+h1 {
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+    font-size: 50px;
+}
+button {
+    background-color: var(--Soft-red);
+    border: none;
+    color: var(--Off-white);
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    width: 195px;
+    margin-top: 50px;
+}
+#sec1 p {
+    margin-left: 65px;
+    width: 350px;
 }
 
 /* sec2*/
@@ -53,6 +94,7 @@ li {
     height: 400px;
     width: 300px;
     padding: 30px;
+    margin-left: 30px;
 }
  #sec2 h2 {
     color: var(--Soft-orange);
@@ -60,3 +102,18 @@ li {
 
 
 /* sec3*/
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 2px;
+    background-color: aqua;
+}
+#sec3 img {
+    width: 130px;
+    height: 150px;
+    margin: 0;
+}
+.three{
+    display: inline-flex;
+}
