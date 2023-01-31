@@ -1,6 +1,13 @@
 body{
-    margin: 0;
+    max-width: 1440px;
     background-color: var(--Off-white);
+}
+main, nav{
+   margin: auto 150px;
+}
+p {
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
 }
 /*colors*/
 :root {
@@ -17,19 +24,39 @@ body{
 /*nav sec*/
 nav{
     margin-bottom: 60px;
+    
 }
-nav li a{
+
+ li a{
     text-decoration: none;
-    margin: 5px;
+    margin-left: 30px;
+    color: var(--Dark-grayish-blue);
 }
 li { 
     list-style-type: none;
     display: inline;
-    float: right;
+    position: relative;
+    left: 400px;
+    
 }
 
 /* sec1*/
+.sec1-img {
+    height: 300px;
+    width: 700px;
+}
 
 /* sec2*/
+#sec2 {
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+}
+ #sec2 h2 {
+    color: var(--Soft-orange);
+}
+
 
 /* sec3*/
