@@ -53,10 +53,7 @@ li {
 .item2 {
     grid-area: area2;
 }
-.item3 {
-    grid-area: area3;
-    
-}
+
 .grid-container1 {
     display: grid;
     grid-template-areas: "area1 area2";
@@ -102,18 +99,30 @@ button {
 
 
 /* sec3*/
-.grid-container2 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-    gap: 2px;
-    background-color: aqua;
+#sec3 {
+    margin-top: 40px;
+}
+h3 {
+    color: var(--Grayish-blue);
+    font-size: 30px;
+}
+#sec3 h4 {
+    color: var(--Very-dark-blue);
+}
+.container {
+    display: flex;
+    
 }
 #sec3 img {
-    width: 130px;
-    height: 150px;
-    margin: 0;
+    width: 160px;
+    height: 180px;
+    float: left;
+    margin-right: 10px;
+    padding-top: 35px;
 }
-.three{
-    display: inline-flex;
+.container > div {
+    flex: 1;
+    margin-right: 5px;
+    
 }
+
