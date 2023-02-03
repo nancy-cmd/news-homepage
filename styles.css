@@ -29,17 +29,21 @@ nav{
     margin-bottom: 60px;
     
 }
+ul svg {
+    position: fixed;
+    left: 150px;
+}
 
  li a{
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 55px;
     color: var(--Dark-grayish-blue);
 }
 li { 
     list-style-type: none;
     display: inline;
     position: relative;
-    left: 400px;
+    left: 465px;
     
 }
 /*grid container*/
@@ -88,13 +92,14 @@ button {
 #sec2 {
     background-color: var(--Very-dark-blue);
     color: var(--Off-white);
-    height: 400px;
-    width: 300px;
+    height: 480px;
+    width: 290px;
     padding: 30px;
     margin-left: 30px;
 }
  #sec2 h2 {
     color: var(--Soft-orange);
+    font-size: 1.5em;
 }
 
 
@@ -124,6 +129,10 @@ h3 {
     flex: 1;
     margin-right: 5px;
     
+}
+/*footer*/
+footer {
+    margin-top: 30px;
 }
 
 /*media*/
