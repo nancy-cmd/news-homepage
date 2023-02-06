@@ -1,18 +1,9 @@
 body{
-    
     background-color: var(--Off-white);
     font-family: 'Inter', sans-serif;
-}
-main, nav{
-   margin: auto 150px;
-   max-width: 1440px;
+    
 }
 
-p {
-    font-size: 15px;
-    color: var(--Dark-grayish-blue);
-    line-height: 30px;
-}
 /*colors*/
 :root {
     /*primary*/
@@ -25,57 +16,71 @@ p {
     --Very-dark-blue: hsl(240, 100%, 5%);
 
 }
-/*nav sec*/
-nav{
-    margin-bottom: 60px;
+p {
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
+    line-height: 30px;
+}
+
+.container {
+    display: grid;
+    margin-right: 50px;
+    margin: 0 250px;
+    width: 900px;
+    position: relative;
+    gap: 25px;
+    grid-template-areas: "nav nav"
+                          "main aside"
+                          "section section"
+                          "footer footer";
+    grid-template-columns: 900px 400px;
+    grid-template-rows: 110px 600px 400px 60px;
+}
+nav, .container {
+    margin: auto 110px;
     
+ }
+ nav {
+    background-color: aqua;
+    grid-area: nav;
 }
 ul svg {
     position: absolute;
-    left: 150px;
+    left: 8px;
 }
 
  li a{
     text-decoration: none;
-    margin-left: 55px;
+    margin-left: 45px;
     color: var(--Dark-grayish-blue);
 }
 li { 
     list-style-type: none;
     display: inline;
     position: relative;
-    left: 465px;
+    left: 735px;
     
 }
-/*grid container*/
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.item1 {
-    grid-area: area1;
-}
-.item2 {
-    grid-area: area2;
-}
 
-.grid-container1 {
-    display: grid;
-    grid-template-areas: "area1 area2";
+main {
+    background-color: rgba(137, 43, 226, 0.572);
+    grid-area: main;
 }
-
-/* sec1*/
+main img {
+    height: 300px;
+    width: 900px;
+}
 .sec1-mob-img {
     display: none;
-}
-.sec1-img {
-    height: 300px;
-    width: 700px;
 }
 h1 {
     color: var(--Very-dark-blue);
     font-weight: 800;
-    font-size: 50px;
+    font-size: 65px;
+}
+main p {
+    margin-left: 65px;
+    margin-top: 50px;
 }
 button {
     background-color: var(--Soft-red);
@@ -87,93 +92,138 @@ button {
     width: 195px;
     margin-top: 50px;
 }
-#sec1 p {
-    margin-left: 65px;
-    width: 350px;
+
+.item1 {
+    grid-area: area1;
+    width: 370px;
+    
+}
+.item2 {
+    grid-area: area2;
+    width: 380px;
 }
 
-/* sec2*/
-#sec2 {
-    background-color: var(--Very-dark-blue);
-    color: var(--Off-white);
-    height: 480px;
-    width: 290px;
-    padding: 30px;
-    margin-left: 30px;
+.grid-container1 {
+    display: grid;
+    grid-template-areas: "area1 area2";
 }
- #sec2 h2 {
+aside {
+    background-color: var(--Very-dark-blue);
+    grid-area: aside;
+    color: var(--Off-white);
+    padding: 30px;
+    
+}
+aside h2 {
     color: var(--Soft-orange);
     font-size: 1.5em;
 }
-
-
-/* sec3*/
-#sec3 {
-    margin-top: 40px;
+.article {
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+section {
+    background-color: coral;
+    grid-area: section;
 }
 h3 {
     color: var(--Grayish-blue);
     font-size: 30px;
 }
-#sec3 h4 {
+section h4 {
     color: var(--Very-dark-blue);
 }
-.grid {
-    display: grid;
-    width: 1000px;
-  height: 400px;
-   grid-template-columns: 10px 10px 10px 10px 10px 10px;
-}
-#sec3 img {
+section img {
     width: 160px;
     height: 180px;
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
     padding-top: 35px;
 }
-.container {
+.container2 {
     display: flex;
     
 }
-
-.container > div {
-    flex: 1;
-    margin-right: 5px;
-    
+.sec3 {
+    width: 1000px;
 }
-/*footer*/
+.info {
+    width: 400px;
+}
 footer {
-    margin-top: 30px;
+    background-color: black;
+    grid-area: footer;
+    margin-top: 10px;
 }
 
-/*media*/
- @media screen and (max-width: 767px){
-    main, nav{
-        margin: auto 50px;
+
+@media screen and (max-width: 767px){
+    .container {
+        margin: 0px 20px;
+    }
+    .container, .grid-container1, .container2 {
+        display: flex ;
+        flex-direction: column;
+        grid-template-rows: 100px 100px 100px ;
+        
+        
+    }
+    nav, .container {
+        margin: auto 10px;
         
      }
+    .sec1-mob-img {
+        display: block;
+        width: 450px;
+        height: 450px;
+    }
+    
     .sec1-img {
         display: none;
     }
-    .sec1-mob-img {
+    main p {
+        margin-left: 25px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    li { 
+        list-style-type: none;
         display: block;
-        max-width: 450px;
-        max-height: 550px;
-    }
-    .grid-container{
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .grid-container1 {
-        display: grid;
-        grid-template-areas: "area1";
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
+        position: relative;
+        left: 245px;
         
     }
-     
-
- }
+    p {
+        font-size: 18px;
+    }
+    
+   nav, main, section {
+    max-width: 500px;
+   }
+   section {
+    height: 900px;
+    
+   }
+   aside {
+    width: 400px;
+   }
+   aside h2 {
+    font-size: 40px;
+   }
+   aside h4 {
+    font-size: 26px;
+   }
+   section h3 {
+    font-size: 40px;
+   }
+   section h4 {
+    font-size: 26px;
+   }
+   section img {
+    height: 230px;
+    width: 170px;
+   }
+ 
+.info {
+    width: 500px;
+}
+}
