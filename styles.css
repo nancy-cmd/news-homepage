@@ -35,13 +35,14 @@ p {
                           "footer footer";
     grid-template-columns: 900px 400px;
     grid-template-rows: 110px 600px 400px 60px;
+    
+    justify-content: center;
 }
 nav .container {
     margin: auto 110px;
     
  }
  nav {
-    background-color: aqua;
     grid-area: nav;
 }
 ul svg {
@@ -63,7 +64,7 @@ li {
 }
 
 main {
-    background-color: rgba(137, 43, 226, 0.572);
+    
     grid-area: main;
 }
 main img {
@@ -122,7 +123,6 @@ aside h2 {
     border-bottom: 1px solid var(--Grayish-blue);
 }
 section {
-    background-color: coral;
     grid-area: section;
 }
 h3 {
