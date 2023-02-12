@@ -158,6 +158,7 @@ footer {
 @media screen and (max-width: 767px){
     .container {
         margin: 0px 0px;
+        overflow: hidden;
     }
     .container, .grid-container1, .container2 {
         display: flex ;
